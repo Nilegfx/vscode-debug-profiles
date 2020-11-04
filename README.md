@@ -16,3 +16,20 @@ a list of vscode debug profiles which I keep using from time to time
     "runtimeArgs": ["--nolazy"]
 }
 ```
+
+## Debugging babel-node with nodemon
+```json
+{
+      "type": "node",
+      "request": "launch",
+      "name": "Nodemon",
+      "runtimeExecutable": "nodemon",
+      "args": ["${workspaceFolder}/backend/index.js"],
+      "restart": true,
+      "protocol": "inspector",
+      "stopOnEntry": false,
+      "runtimeArgs": ["--nolazy"],
+      "sourceMaps": true,
+      "console": "integratedTerminal"
+    }
+```
